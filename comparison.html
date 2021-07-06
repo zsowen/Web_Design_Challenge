@@ -12,7 +12,7 @@
   </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Latitude</a>
+        <a class="navbar-brand" href="../index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,19 +25,17 @@
             <li class="nav-item">
             <a class="nav-link" href="comparison.html">Comparison</a>
             </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Visualizations
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="Visualizations/cloudiness.html">Cloudiness</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="Visualizations/humidity.html">Humidity</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="Visualizations/temp.html">Max Temperature</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="Visualizations/wind.html">Wind Speed</a>
-            </div>
+            <li class="nav-item">
+            <a class="nav-link" href="Visualizations/cloudiness.html">Cloudiness</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="Visualizations/humidity.html">Humidity</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="Visualizations/temp.html">Max Temperature</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="Visualizations/wind.html">Wind Speed</a>
             </li>
         </ul>
         </div>
@@ -45,28 +43,30 @@
 
     <div class="container">
         <section class="row">
-            <div class="col-md-6">
-                <article class="summary-content">
-                    <h1 class="summary-header"> Summary: Latitude Vs. Weather Factors</h1>
-                    <hr class="summary-hr"/>
-                    <img src="Assets/images/Fig1.png" alt= "" id= "summary-image"/>
-                    <p>This project was designed to analyze how weather changes as you get closer and closer the the equator. To accomplish this analysis, data was first pulled from the OpenWeatherMap API to assemble data from over 500 random cities. This allowed for a global image of the data.</p>
-                    <p>After pulling together the dataset, Matplotlib was used to plot various factors of the weather and compare them to the latitude in the specific city. Factors that were compared included: Cloudiness, Humidity, Max Temperature, and Wind Speed. This site is designed to be a hub for this data analysis, including, the raw data, and the visualizations created within the analysis.</p>
-                </article>
+            <div class="col-xs-12">
+                <h1 class="summary-header">Comparison: Latitude vs. Factors</h1>
+                <hr class="summary-hr"/>
+                <p>Click and plot to get an in-depth analysis.</p>
             </div>
-            <div class="col-md-4">
-                <section id="image-area">
-                    <div class="image-content">
-                        <h2 class="image-header">Visualizations</h2>
-                        <hr />
-                        <div id="images">
-                            <a href="Visualizations/cloudiness.html"><img src="Assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="image-photo"></a>
-                            <a href="Visualizations/humidity.html"><img src="Assets/images/Fig2.png" alt="Latitude vs. Humidity" class="image-photo"></a>
-                            <a href="Visualizations/temp.html"><img src="Assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="image-photo"></a>
-                            <a href="Visualizations/wind.html"><img src="Assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="image-photo"></a>
-                        </div>
-                    </div>
-                </section>
+            <div class="col-md-7">
+                <h2>vs. Cloudiness</h2>
+                <a href="Visualizations/cloudiness.html"><img src="Assets/images/Fig3.png" alt="Latitude vs. CLoudiness" class="comparison-image img-responsive"></a>
+                <hr class="visible-xs visible-sm">
+            </div>
+            <div class="col-md-5">
+                <h2>vs. Humidity</h2>
+                <a href="Visualizations/humidity.html"><img src="Assets/images/Fig2.png" alt="Latitude vs. CLoudiness" class="comparison-image img-responsive"></a>
+                <hr class="visible-xs visible-sm">
+            </div>
+            <div class="col-md-7">
+                <h2>vs. Max Temperature</h2>
+                <a href="Visualizations/temp.html"><img src="Assets/images/Fig1.png" alt="Latitude vs. CLoudiness" class="comparison-image img-responsive"></a>
+                <hr class="visible-xs visible-sm">
+            </div>
+            <div class="col-md-5">
+                <h2>vs. Wind Speed</h2>
+                <a href="Visualizations/wind.html"><img src="Assets/images/Fig4.png" alt="Latitude vs. CLoudiness" class="comparison-image img-responsive"></a>
+                <hr class="visible-xs visible-sm">
             </div>
         </section>
     </div>
